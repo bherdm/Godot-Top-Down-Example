@@ -1,7 +1,10 @@
-[gd_scene load_steps=7 format=3 uid="uid://wi37dp7i8xcw"]
+[gd_scene load_steps=8 format=3 uid="uid://wi37dp7i8xcw"]
 
 [ext_resource type="Script" path="res://Worlds/title_menu.gd" id="1_2lixn"]
 [ext_resource type="Script" path="res://Elements/Curtain/curtain.gd" id="1_adfri"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_hdl10"]
+font_size = 64
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpfin"]
 bg_color = Color(0, 0, 0, 1)
@@ -54,10 +57,12 @@ script = ExtResource("1_2lixn")
 
 [node name="VBoxContainer" type="VBoxContainer" parent="."]
 layout_mode = 2
+alignment = 1
 
 [node name="TitleLabel" type="Label" parent="VBoxContainer"]
 layout_mode = 2
-text = "Title"
+text = "Top-Down Example"
+label_settings = SubResource("LabelSettings_hdl10")
 horizontal_alignment = 1
 
 [node name="HBoxContainer" type="HBoxContainer" parent="VBoxContainer"]
@@ -73,6 +78,7 @@ layout_mode = 2
 text = "Quit"
 
 [node name="Curtain" type="Panel" parent="."]
+visible = false
 layout_mode = 2
 mouse_filter = 2
 theme_override_styles/panel = SubResource("StyleBoxFlat_kpfin")
