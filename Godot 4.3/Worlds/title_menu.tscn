@@ -4,7 +4,7 @@
 [ext_resource type="Script" path="res://Elements/Curtain/curtain.gd" id="1_adfri"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_hdl10"]
-font_size = 64
+font_size = 48
 
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_kpfin"]
 bg_color = Color(0, 0, 0, 1)
