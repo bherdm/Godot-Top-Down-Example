@@ -5,7 +5,7 @@
 - Global (autoload) SceneLoader node
 - Splash screen template
 - Title screen template
-- Top-down tile-based world building example
+- Top-down tile-based world example
 - Top-down player movement and collisions
 
 ## Future Additions
@@ -19,7 +19,7 @@
     - Chest inventory
 - Enemies
 - Health node
-- Building interriors
+- Building interiors
 - Functional doors
 - Proximity interaction system
     - Doors
