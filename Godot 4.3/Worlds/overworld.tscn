@@ -1,7 +1,11 @@
-[gd_scene load_steps=3 format=4 uid="uid://drkut42pt87cy"]
+[gd_scene load_steps=7 format=4 uid="uid://drkut42pt87cy"]
 
 [ext_resource type="TileSet" uid="uid://cvg2dibtvxm14" path="res://Elements/TileSet/KenneyTileSets.tres" id="1_tya22"]
 [ext_resource type="PackedScene" uid="uid://djcq4t7yvjucm" path="res://Elements/Player/player.tscn" id="2_q41q5"]
+[ext_resource type="PackedScene" uid="uid://bl7f3si3lwdty" path="res://Elements/Pickups/pickup.tscn" id="3_2yc22"]
+[ext_resource type="PackedScene" uid="uid://be03qownhf311" path="res://Elements/Inventory/inventory_dialog.tscn" id="4_juh1u"]
+[ext_resource type="Resource" uid="uid://dknwadqi8maqu" path="res://Elements/Items/key.tres" id="4_pfuxg"]
+[ext_resource type="Script" path="res://Elements/user_interface/ui_root.gd" id="4_tvquj"]
 
 [node name="Overworld" type="Node2D"]
 
@@ -14,7 +18,67 @@ tile_map_data = PackedByteArray("AAAAAAAAAAAHAAEAAAABAAAAAAAHAAEAAAACAAAAAAAHAAE
 tile_set = ExtResource("1_tya22")
 
 [node name="Player" parent="." instance=ExtResource("2_q41q5")]
+unique_name_in_owner = true
+position = Vector2(277, 132)
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 limit_left = 0
 limit_top = 0
+
+[node name="Pickups" type="Node" parent="."]
+
+[node name="Coins" type="Node" parent="Pickups"]
+
+[node name="Pickup" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+
+[node name="Pickup2" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(352, 174)
+
+[node name="Pickup3" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(369, 178)
+
+[node name="Pickup4" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(393, 177)
+
+[node name="Pickup5" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(414, 172)
+
+[node name="Pickup6" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(437, 172)
+
+[node name="Pickup7" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(452, 181)
+
+[node name="Pickup8" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(471, 182)
+
+[node name="Pickup9" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(492, 176)
+
+[node name="Pickup10" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(527, 167)
+
+[node name="Pickup11" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(527, 167)
+
+[node name="Pickup12" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(580, 148)
+
+[node name="Pickup13" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(653, 140)
+
+[node name="Pickup14" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(767, 150)
+
+[node name="Pickup15" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(872, 210)
+
+[node name="Pickup" parent="Pickups" instance=ExtResource("3_2yc22")]
+position = Vector2(286, 183)
+item = ExtResource("4_pfuxg")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="."]
+script = ExtResource("4_tvquj")
+
+[node name="InventoryDialog" parent="CanvasLayer" instance=ExtResource("4_juh1u")]
+visible = false

@@ -3,6 +3,12 @@ extends CharacterBody2D
 
 const base_walk_speed = 50.0
 
+var inventory:Inventory = Inventory.new()
+
+func on_item_picked_up(item: Item):
+	print ("I got a ", item.name)
+	inventory.add_item(item)
+
 func _physics_process(delta: float) -> void:
 	var SPEED
 	if Input.is_action_pressed("Run"):

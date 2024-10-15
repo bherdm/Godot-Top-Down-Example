@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://ciqwtlge6cxh6"]
+
+[ext_resource type="Texture2D" uid="uid://mug8j3pmeyi" path="res://Assets/kenney.nl/kenney_1-bit-pack/kenney_1-bit-pack.png" id="1_06ori"]
+[ext_resource type="Script" path="res://Elements/Items/item.gd" id="1_we6jg"]
+[ext_resource type="PackedScene" uid="uid://c4qkwtfbecybi" path="res://Elements/Items/coin_pickup.tscn" id="2_8fpym"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gbv0j"]
+atlas = ExtResource("1_06ori")
+region = Rect2(697, 51, 16, 16)
+
+[resource]
+script = ExtResource("1_we6jg")
+name = "coin"
+pickup_scene = ExtResource("2_8fpym")
+inv_atlas = SubResource("AtlasTexture_gbv0j")

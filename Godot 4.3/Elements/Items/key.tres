@@ -1,0 +1,15 @@
+[gd_resource type="Resource" script_class="Item" load_steps=5 format=3 uid="uid://dknwadqi8maqu"]
+
+[ext_resource type="Texture2D" uid="uid://mug8j3pmeyi" path="res://Assets/kenney.nl/kenney_1-bit-pack/kenney_1-bit-pack.png" id="1_07u42"]
+[ext_resource type="PackedScene" uid="uid://bq24p3ud261yk" path="res://Elements/Items/key_pickup.tscn" id="1_usslo"]
+[ext_resource type="Script" path="res://Elements/Items/item.gd" id="2_defrx"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6hwni"]
+atlas = ExtResource("1_07u42")
+region = Rect2(544, 187, 16, 16)
+
+[resource]
+script = ExtResource("2_defrx")
+name = "key"
+pickup_scene = ExtResource("1_usslo")
+inv_atlas = SubResource("AtlasTexture_6hwni")

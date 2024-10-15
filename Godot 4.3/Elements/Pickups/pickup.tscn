@@ -1,0 +1,9 @@
+[gd_scene load_steps=3 format=3 uid="uid://bl7f3si3lwdty"]
+
+[ext_resource type="Script" path="res://Elements/Pickups/pickup.gd" id="1_ar4fu"]
+[ext_resource type="Resource" uid="uid://ciqwtlge6cxh6" path="res://Elements/Items/coin.tres" id="2_akr6o"]
+
+[node name="Pickup" type="Node2D"]
+position = Vector2(341, 166)
+script = ExtResource("1_ar4fu")
+item = ExtResource("2_akr6o")
