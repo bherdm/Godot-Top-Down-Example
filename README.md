@@ -32,6 +32,7 @@
     - NPCs
     - Chests
 - Purchasing from NPCs
+- Controller support
 
 ## Assets from Kenney's Assets
 
