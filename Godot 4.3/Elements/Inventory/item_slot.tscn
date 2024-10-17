@@ -9,3 +9,11 @@ script = ExtResource("1_qmff0")
 unique_name_in_owner = true
 custom_minimum_size = Vector2(64, 64)
 layout_mode = 2
+
+[node name="Label" type="Label" parent="."]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 1
+text = "9999"
+horizontal_alignment = 2
+vertical_alignment = 2

@@ -1,13 +1,21 @@
 extends Node2D
 
 @export var item: Item
+@export var count:int = 1
+
+var item_stack: ItemStackInstance = ItemStackInstance.new()
 
 func _ready() -> void:
+	#Creates the transferable item_stack
+	item_stack.item = item
+	item_stack.stack_count = count
+	
+	#Creates the visual and sets up the signal from the visual's collision detection to the player
 	var new_item: Area2D = item.pickup_scene.instantiate()
 	add_child(new_item)
 	new_item.area_entered.connect(pickup_item_area_entered)
 
 func pickup_item_area_entered(area):
-	if area.has_method("on_item_picked_up"):
-		area.on_item_picked_up(item)
+	if area.has_method("on_item_stack_picked_up"):
+		area.on_item_stack_picked_up(item_stack)
 		queue_free()

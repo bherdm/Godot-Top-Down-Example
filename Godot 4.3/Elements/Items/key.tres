@@ -13,3 +13,4 @@ script = ExtResource("2_defrx")
 name = "key"
 pickup_scene = ExtResource("1_usslo")
 inv_atlas = SubResource("AtlasTexture_6hwni")
+stack_max = 2
