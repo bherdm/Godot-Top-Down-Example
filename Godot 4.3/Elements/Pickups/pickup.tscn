@@ -4,6 +4,5 @@
 [ext_resource type="Resource" uid="uid://ciqwtlge6cxh6" path="res://Elements/Items/coin.tres" id="2_akr6o"]
 
 [node name="Pickup" type="Node2D"]
-position = Vector2(341, 166)
 script = ExtResource("1_ar4fu")
 item = ExtResource("2_akr6o")

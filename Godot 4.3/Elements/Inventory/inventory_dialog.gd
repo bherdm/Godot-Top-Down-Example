@@ -13,10 +13,10 @@ func open(inventory: Inventory):
 	for child in grid_container.get_children():
 		child.queue_free()
 	
-	for item in inventory.get_contents():
+	for item_stack in inventory.get_contents():
 		var slot: ItemSlot = slot_scene.instantiate()
 		grid_container.add_child(slot)
-		slot.set_texture(item)
+		slot.set_texture(item_stack)
 
 func close():
 	hide()

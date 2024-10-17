@@ -1,0 +1,6 @@
+[gd_scene load_steps=2 format=3 uid="uid://b0rgxwxi2dsy3"]
+
+[ext_resource type="Script" path="res://Elements/Items/item_stack_instance.gd" id="1_xc7jg"]
+
+[node name="Item Stack Instance" type="Node"]
+script = ExtResource("1_xc7jg")

@@ -13,3 +13,4 @@ script = ExtResource("1_we6jg")
 name = "coin"
 pickup_scene = ExtResource("2_8fpym")
 inv_atlas = SubResource("AtlasTexture_gbv0j")
+stack_max = 10

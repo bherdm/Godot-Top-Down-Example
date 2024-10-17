@@ -10,10 +10,12 @@
 - Item resource
     - pickup representation
     - inventory representation
+    - item stack maximum
 - Items
     - Coin
     - Key
 - Basic inventory system
+    - Item stack count
 - Item pickup scene
 
 ## Future Additions
@@ -21,7 +23,6 @@
 - Items
     - Equipped representation
 - Inventory improvement
-    - stackable items
     - click and drag reorganization
 - Enemies
 - Health node

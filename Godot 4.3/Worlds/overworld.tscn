@@ -73,8 +73,34 @@ position = Vector2(767, 150)
 [node name="Pickup15" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(872, 210)
 
-[node name="Pickup" parent="Pickups" instance=ExtResource("3_2yc22")]
+[node name="Keys" type="Node" parent="Pickups"]
+
+[node name="Pickup" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
 position = Vector2(286, 183)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup2" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(273, 200)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup3" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(299, 218)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup4" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(264, 224)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup5" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(225, 215)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup6" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(211, 195)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup7" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(193, 216)
 item = ExtResource("4_pfuxg")
 
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
