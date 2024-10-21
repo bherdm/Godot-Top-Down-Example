@@ -1,9 +1,13 @@
-[gd_scene load_steps=2 format=3 uid="uid://cripg54p13pq0"]
+[gd_scene load_steps=4 format=3 uid="uid://cripg54p13pq0"]
 
 [ext_resource type="Script" path="res://Elements/Inventory/item_slot.gd" id="1_qmff0"]
+[ext_resource type="StyleBox" uid="uid://bol4087bvrvmw" path="res://Elements/Inventory/item_slot_default_styleboxflat.tres" id="2_pt3kr"]
+[ext_resource type="StyleBox" uid="uid://c8w1nr75xu00c" path="res://Elements/Inventory/item_slot_mouse_over_styleboxflat.tres" id="3_61k44"]
 
 [node name="ItemSlot" type="PanelContainer"]
 script = ExtResource("1_qmff0")
+default_styleboxflat = ExtResource("2_pt3kr")
+mouse_over_styleboxflat = ExtResource("3_61k44")
 
 [node name="TextureRect" type="TextureRect" parent="."]
 unique_name_in_owner = true
@@ -17,3 +21,6 @@ size_flags_vertical = 1
 text = "9999"
 horizontal_alignment = 2
 vertical_alignment = 2
+
+[connection signal="mouse_entered" from="." to="." method="_on_mouse_entered"]
+[connection signal="mouse_exited" from="." to="." method="_on_mouse_exited"]

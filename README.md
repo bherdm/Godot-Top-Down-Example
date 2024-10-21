@@ -34,6 +34,7 @@
     - Chests
 - Purchasing from NPCs
 - Controller support
+- Saving/loading inventory
 
 ## Assets from Kenney's Assets
 
