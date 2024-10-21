@@ -5,8 +5,8 @@ const base_walk_speed = 50.0
 
 var inventory:Inventory = Inventory.new()
 
-func on_item_stack_picked_up(item_stack: ItemStackInstance):
-	inventory.add_item(item_stack)
+func attempt_to_pickup_item(item_stack: ItemStackInstance) -> bool:
+	return inventory.add_item(item_stack)
 
 func _physics_process(delta: float) -> void:
 	var SPEED

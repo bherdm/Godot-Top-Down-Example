@@ -16,6 +16,6 @@ func _ready() -> void:
 	new_item.area_entered.connect(pickup_item_area_entered)
 
 func pickup_item_area_entered(area):
-	if area.has_method("on_item_stack_picked_up"):
-		area.on_item_stack_picked_up(item_stack)
-		queue_free()
+	if area.has_method("attempt_to_pickup_item"):
+		if area.attempt_to_pickup_item(item_stack) == true:
+			queue_free()

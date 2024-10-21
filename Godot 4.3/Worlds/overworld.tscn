@@ -103,6 +103,90 @@ item = ExtResource("4_pfuxg")
 position = Vector2(193, 216)
 item = ExtResource("4_pfuxg")
 
+[node name="Pickup8" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(317, 217)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup9" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(304, 234)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup10" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(330, 252)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup11" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(295, 258)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup12" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(256, 249)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup13" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(242, 229)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup14" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(224, 250)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup15" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(355, 240)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup16" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(342, 257)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup17" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(368, 275)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup18" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(333, 281)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup19" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(294, 272)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup20" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(280, 252)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup21" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(262, 273)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup22" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(356, 273)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup23" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(343, 290)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup24" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(369, 308)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup25" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(334, 314)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup26" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(295, 305)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup27" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(281, 285)
+item = ExtResource("4_pfuxg")
+
+[node name="Pickup28" parent="Pickups/Keys" instance=ExtResource("3_2yc22")]
+position = Vector2(263, 306)
+item = ExtResource("4_pfuxg")
+
 [node name="CanvasLayer" type="CanvasLayer" parent="."]
 script = ExtResource("4_tvquj")
 

@@ -1,0 +1,8 @@
+[gd_resource type="Resource" script_class="Item" load_steps=2 format=3 uid="uid://oqk0g0g5ynms"]
+
+[ext_resource type="Script" path="res://Elements/Items/item.gd" id="1_w362e"]
+
+[resource]
+script = ExtResource("1_w362e")
+name = "empty"
+stack_max = 1

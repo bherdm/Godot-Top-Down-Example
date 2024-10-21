@@ -1,4 +1,4 @@
 extends Area2D
 
-func on_item_stack_picked_up(item_stack: ItemStackInstance):
-	get_parent().on_item_stack_picked_up(item_stack)
+func attempt_to_pickup_item(item_stack: ItemStackInstance) -> bool:
+	return get_parent().attempt_to_pickup_item(item_stack)
