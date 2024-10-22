@@ -14,6 +14,8 @@
 - Items
     - Coin
     - Key
+- Item_Stacks
+    - Parent of items to keep track of quantity
 - Basic inventory system
     - Item stack count
 - Item pickup scene
