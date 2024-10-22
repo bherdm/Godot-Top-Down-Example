@@ -30,36 +30,48 @@ limit_top = 0
 [node name="Coins" type="Node" parent="Pickups"]
 
 [node name="Pickup" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
+position = Vector2(324, 164)
+count = 8
 
 [node name="Pickup2" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(352, 174)
+count = 8
 
 [node name="Pickup3" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(369, 178)
+count = 8
 
 [node name="Pickup4" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(393, 177)
+count = 9
 
 [node name="Pickup5" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(414, 172)
+count = 9
 
 [node name="Pickup6" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(437, 172)
+count = 7
 
 [node name="Pickup7" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(452, 181)
+count = 7
 
 [node name="Pickup8" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(471, 182)
+count = 7
 
 [node name="Pickup9" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(492, 176)
+count = 7
 
 [node name="Pickup10" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(527, 167)
+count = 7
 
 [node name="Pickup11" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(527, 167)
+count = 7
 
 [node name="Pickup12" parent="Pickups/Coins" instance=ExtResource("3_2yc22")]
 position = Vector2(580, 148)
