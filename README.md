@@ -22,6 +22,7 @@
 - Basic proximity interaction system
   - Proximity areas (for containers, doors, etc)
   - Proximity sensor (array of proximity areas managed in the player)
+  - Chest ItemContainers will highlight if they are within player proximity
 - Container inventories can be viewed
 
 ## Future Additions
@@ -42,6 +43,7 @@
 - Purchasing from NPCs
 - Controller support
 - Saving/loading inventory
+- Chest - Open Animation
 
 ## Known Issues
 
