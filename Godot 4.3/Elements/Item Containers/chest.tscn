@@ -1,7 +1,8 @@
-[gd_scene load_steps=6 format=3 uid="uid://imrsdamuhmbs"]
+[gd_scene load_steps=7 format=3 uid="uid://imrsdamuhmbs"]
 
 [ext_resource type="Script" path="res://Elements/Item Containers/chest.gd" id="1_elbyg"]
 [ext_resource type="Texture2D" uid="uid://bml51572tagm" path="res://Assets/kenney.nl/kenney_tiny-dungeon/kenney_tiny-dungeon.png" id="1_jpsn0"]
+[ext_resource type="Script" path="res://Elements/Proximity System/proximity_interact_area_2d.gd" id="2_u12jc"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_jjckt"]
 size = Vector2(16, 14)
@@ -23,6 +24,7 @@ shape = SubResource("RectangleShape2D_jjckt")
 [node name="Proximity_Interact_Area2D" type="Area2D" parent="."]
 collision_layer = 2
 collision_mask = 2
+script = ExtResource("2_u12jc")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Proximity_Interact_Area2D"]
 position = Vector2(0, 1)
@@ -31,3 +33,6 @@ shape = SubResource("RectangleShape2D_h58e6")
 [node name="Sprite2D" type="Sprite2D" parent="."]
 self_modulate = Color(1.5, 1.5, 1.5, 1)
 texture = SubResource("AtlasTexture_sp60n")
+
+[connection signal="area_entered" from="Proximity_Interact_Area2D" to="Proximity_Interact_Area2D" method="_on_area_entered"]
+[connection signal="area_exited" from="Proximity_Interact_Area2D" to="Proximity_Interact_Area2D" method="_on_area_exited"]

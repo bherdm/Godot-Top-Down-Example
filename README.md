@@ -19,6 +19,9 @@
 - Basic inventory system
     - Item stack count
 - Item pickup scene
+- Basic proximity interaction system
+  - Proximity areas (for containers, doors, etc)
+  - Proximity sensor (array of proximity areas managed in the player)
 
 ## Future Additions
 
@@ -26,14 +29,14 @@
     - Equipped representation
 - Inventory improvement
     - click and drag reorganization
+    - container inventory dialog
 - Enemies
 - Health node
 - Building interiors
 - Functional doors
 - Proximity interaction system
-    - Doors
-    - NPCs
-    - Chests
+    - highlight nearest proximity area sprite
+    - display input for interacting with proximity areas
 - Purchasing from NPCs
 - Controller support
 - Saving/loading inventory
