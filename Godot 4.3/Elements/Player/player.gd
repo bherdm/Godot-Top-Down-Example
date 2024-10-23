@@ -1,11 +1,15 @@
 class_name Player
 extends CharacterBody2D
 
+@onready var proximity_interaction_sensor: ProximityInteractionSensor = %Proximity_Interaction_Sensor
+
+@export var inventory_size: int = 18
+
 const base_walk_speed = 50.0
 
-var inventory:Inventory = Inventory.new()
+var inventory:Inventory = Inventory.new(inventory_size)
 
-func attempt_to_pickup_item(item_stack: ItemStackInstance) -> bool:
+func attempt_to_pickup_item(item_stack: ItemStackInstance) -> int:
 	return inventory.add_item(item_stack)
 
 func _physics_process(delta: float) -> void:

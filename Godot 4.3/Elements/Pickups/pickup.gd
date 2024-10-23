@@ -17,5 +17,8 @@ func _ready() -> void:
 
 func pickup_item_area_entered(area):
 	if area.has_method("attempt_to_pickup_item"):
-		if area.attempt_to_pickup_item(item_stack) == true:
+		var stack_count_not_picked_up: int = area.attempt_to_pickup_item(item_stack)
+		if stack_count_not_picked_up == 0:
 			queue_free()
+		else:
+			item_stack.stack_count = stack_count_not_picked_up

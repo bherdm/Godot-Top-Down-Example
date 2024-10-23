@@ -2,9 +2,10 @@ class_name Inventory
 
 const EMPTY_ITEM = preload("res://Elements/Items/empty_item.tres")
 var _content:Array[ItemStackInstance] = []
-var slot_count:int = 14
+var slot_count:int
 
-func _init() -> void:
+func _init(inv_slot_count:int) -> void:
+	slot_count = inv_slot_count
 	#Create empty slots
 	for i in slot_count:
 		var isi = ItemStackInstance.new()
@@ -12,7 +13,7 @@ func _init() -> void:
 		isi.stack_count = 1
 		_content.append(isi)
 
-func add_item(new_stack: ItemStackInstance) -> bool:
+func add_item(new_stack: ItemStackInstance) -> int:
 	#Loop through inventory checking for less than full stacks to fill
 	for inv_item_stack in get_contents():
 		#If new item is already in inventory, check if the stack is less than full
@@ -34,18 +35,16 @@ func add_item(new_stack: ItemStackInstance) -> bool:
 		
 		#Exit function and loop if stack reaches zero
 		if new_stack.stack_count == 0:
-			return true
+			return 0
 	
 	#Loop through inventory checking for empty slots to fill
 	for i in _content.size():
 		if _content[i].item.name == EMPTY_ITEM.name:
 			_content[i] = new_stack
-			print("empty stacks")
-			return true
+			return 0
 	
 	#Inventory is full, return false
-	print ("false")
-	return false
+	return new_stack.stack_count
 
 func remove_item(item_stack: ItemStackInstance):
 	#empty the slot
