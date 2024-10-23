@@ -1,4 +1,4 @@
-[gd_scene load_steps=8 format=4 uid="uid://drkut42pt87cy"]
+[gd_scene load_steps=10 format=4 uid="uid://drkut42pt87cy"]
 
 [ext_resource type="TileSet" uid="uid://cvg2dibtvxm14" path="res://Elements/TileSet/KenneyTileSets.tres" id="1_tya22"]
 [ext_resource type="PackedScene" uid="uid://djcq4t7yvjucm" path="res://Elements/Player/player.tscn" id="2_q41q5"]
@@ -6,7 +6,9 @@
 [ext_resource type="PackedScene" uid="uid://be03qownhf311" path="res://Elements/Inventory/inventory_dialog.tscn" id="4_juh1u"]
 [ext_resource type="Resource" uid="uid://dknwadqi8maqu" path="res://Elements/Items/key.tres" id="4_pfuxg"]
 [ext_resource type="Script" path="res://Elements/user_interface/ui_root.gd" id="4_tvquj"]
+[ext_resource type="PackedScene" uid="uid://c3r7jkfmyoagv" path="res://Elements/Item Containers/container_dialog.tscn" id="7_103pw"]
 [ext_resource type="PackedScene" uid="uid://imrsdamuhmbs" path="res://Elements/Item Containers/chest.tscn" id="7_ls2yd"]
+[ext_resource type="PackedScene" uid="uid://cripg54p13pq0" path="res://Elements/Inventory/item_slot.tscn" id="8_mggft"]
 
 [node name="Overworld" type="Node2D"]
 
@@ -21,6 +23,7 @@ tile_set = ExtResource("1_tya22")
 [node name="Player" parent="." instance=ExtResource("2_q41q5")]
 unique_name_in_owner = true
 position = Vector2(277, 132)
+inventory_size = 24
 
 [node name="Camera2D" type="Camera2D" parent="Player"]
 limit_left = 0
@@ -205,6 +208,10 @@ script = ExtResource("4_tvquj")
 
 [node name="InventoryDialog" parent="CanvasLayer" instance=ExtResource("4_juh1u")]
 visible = false
+
+[node name="ContainerDialog" parent="CanvasLayer" instance=ExtResource("7_103pw")]
+visible = false
+slot_scene = ExtResource("8_mggft")
 
 [node name="Chest" parent="." instance=ExtResource("7_ls2yd")]
 position = Vector2(328, 104)

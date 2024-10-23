@@ -1,3 +1,5 @@
+class_name ItemContainer
 extends StaticBody2D
 
-var inventory:Inventory = Inventory.new(4)
+@export var inventory_size: int = 6
+var inventory:Inventory = Inventory.new(inventory_size)
