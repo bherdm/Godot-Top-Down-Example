@@ -16,14 +16,12 @@
     - Key
 - Item_Stacks
     - Parent of items to keep track of quantity
+    - Optional .tscn version for filling ItemContainers
 - Basic inventory system
     - Item stack count
 - Item pickup scene
-- Basic proximity interaction system
-  - Proximity areas (for containers, doors, etc)
-  - Proximity sensor (array of proximity areas managed in the player)
-  - Chest ItemContainers will highlight if they are within player proximity
-- Container inventories can be viewed
+- Proximity System
+  - Nearest proximity area will highlight and interact with player
 
 ## Future Additions
 
@@ -38,7 +36,6 @@
 - Building interiors
 - Functional doors
 - Proximity interaction system
-    - highlight nearest proximity area sprite
     - display input for interacting with proximity areas
 - Purchasing from NPCs
 - Controller support
@@ -47,7 +44,6 @@
 
 ## Known Issues
 
-- Only the last proximity interaction area is recognized. Should be nearest.
 - Player movement should be refactored into a specific node
 - Player item area 2d logic should be refactored to be on player
 

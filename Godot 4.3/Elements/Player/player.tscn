@@ -28,7 +28,7 @@ collision_layer = 2
 collision_mask = 2
 script = ExtResource("3_54f0l")
 
-[node name="Proximity_Interaction_Sensor" type="Node" parent="Item_Area2D"]
+[node name="Proximity_Interaction_Sensor" type="Node2D" parent="Item_Area2D"]
 unique_name_in_owner = true
 script = ExtResource("4_4o1c0")
 
